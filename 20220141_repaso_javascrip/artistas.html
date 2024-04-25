@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artistas</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mis Favoritos</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Mis Favoritos</h1>
+            <div id="favoritos-list" class="row"></div>
+        </div>
+
+        <!-- Agregar enlaces a Bootstrap JS y jQuery (necesario para Bootstrap) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+
+    </html>
+    <script>
+
+        const favoritos = [
+            { nombre: "Radiohead " },
+            { nombre: "Zoe" },
+            { nombre: "Tv Girl" },
+            { nombre: "Deftones" },
+            { nombre: "Joji" },
+            { nombre: "Cuco" },
+            { nombre: "Depresion Sonora" },
+            { nombre: "Sistem of a Down" },
+            { nombre: "Mac DeMarco" },
+            { nombre: "Tame Impala" }
+        ];
+
+        function mostrarFavoritos() {
+            const favoritosList = document.getElementById("favoritos-list");
+
+            favoritos.forEach(favorito => {
+                const cardHtml = `
+                <h5 class="card-title">${favorito.nombre}</h5>
+                <br>
+        `;
+                favoritosList.innerHTML += cardHtml;
+            });
+        }
+        mostrarFavoritos();
+    </script>
+</body>
+
+</html>

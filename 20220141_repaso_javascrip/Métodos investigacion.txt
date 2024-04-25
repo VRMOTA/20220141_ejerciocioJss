@@ -1,0 +1,22 @@
+Método reduce:
+reduce() es un método que se utiliza para reducir los elementos de un array a un solo valor. Se ejecuta una función proporcionada por el usuario en cada elemento del array, acumulando el resultado hasta obtener un solo valor de retorno. La función de reducción toma cuatro argumentos: acumulador, valor actual, índice actual y el propio array.
+
+Ejemplo de reduce:
+Supongamos que tenemos un array de números y queremos sumar todos los elementos:
+
+const numbers = [1, 2, 3, 4, 5];
+
+const sum = numbers.reduce((accumulator, currentValue) => {
+  return accumulator + currentValue;
+}, 0);
+
+console.log(sum); // Output: 15
+
+Método filter:
+filter() es un método que se utiliza para crear un nuevo array con todos los elementos que pasan el test implementado por la función proporcionada. La función de filtrado toma tres argumentos: valor del elemento, índice del elemento y el array en sí.
+
+Ejemplo de filter:
+Supongamos que tenemos un array de números y queremos filtrar solo los números mayores que 3:
+
+
+
